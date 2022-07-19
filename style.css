@@ -132,3 +132,49 @@ body {
 
   text-decoration: none;
 }
+
+/* ======================== responsive ==================================== */
+
+@media (min-width: 1024px) {
+  .card-container {
+    display: grid;
+    grid-template-areas: 'content image';
+    grid-template-columns: 42rem 32rem;
+
+    width: auto;
+    height: 32rem;
+  }
+
+  .overlay {
+    grid-area: image;
+
+    width: 38rem;
+    height: 32rem;
+  }
+
+  .image {
+    grid-area: image;
+
+    background-image: url('./images/image-header-desktop.jpg');
+
+    width: 38rem;
+    height: 32rem;
+  }
+
+  .card-content {
+    grid-area: content;
+
+    text-align: start;
+
+    align-items: flex-start;
+  }
+
+  .card-content header h1 {
+    font-size: 2.6rem;
+  }
+
+  .card-content footer .stats {
+    display: flex;
+    gap: 5rem;
+  }
+}
