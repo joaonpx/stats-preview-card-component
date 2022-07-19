@@ -95,6 +95,30 @@ body {
   line-height: 1.8;
 }
 
+.card-content footer {
+  margin-top: 3.2rem;
+}
+
+.card-content footer .stats {
+  display: grid;
+  gap: 2.2rem;
+}
+
+.card-content footer .stats h3 {
+  text-transform: uppercase;
+  font-size: 1.9rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.card-content footer .stats p {
+  color: var(--stat-headings);
+
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
 /* ======================== footer ==================================== */
 
 .attribution {
