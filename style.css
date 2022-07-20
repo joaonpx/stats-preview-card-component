@@ -39,22 +39,24 @@ body {
   border-radius: 0 0 0.5rem 0.5rem;
 }
 
-.overlay {
-  background: hsl(277, 75%, 30%);
-
-  position: absolute;
+.overlay,
+.image {
   width: 26rem;
   height: 20rem;
-
-  z-index: 1;
 
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
+.overlay {
+  background: hsl(277, 75%, 30%);
+
+  position: absolute;
+
+  z-index: 1;
+}
+
 .image {
   background-image: url('./images/image-header-mobile.jpg');
-  width: 26rem;
-  height: 20rem;
 
   background-position: center;
   background-size: cover;
@@ -63,8 +65,6 @@ body {
   z-index: 1;
 
   opacity: 0.4;
-
-  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .card-content {
@@ -139,26 +139,35 @@ body {
   .card-container {
     display: grid;
     grid-template-areas: 'content image';
-    grid-template-columns: 42rem 32rem;
+    grid-template-columns: 42rem 43rem;
+    grid-template-rows: auto;
 
     width: auto;
-    height: 32rem;
+    height: auto;
+
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .image-container {
+    margin-left: 1.5rem;
+  }
+
+  .overlay,
+  .image {
+    width: 42rem;
+    height: 37rem;
+
+    border-radius: 0 0.5rem 0.5rem 0;
   }
 
   .overlay {
     grid-area: image;
-
-    width: 38rem;
-    height: 32rem;
   }
 
   .image {
     grid-area: image;
 
     background-image: url('./images/image-header-desktop.jpg');
-
-    width: 38rem;
-    height: 32rem;
   }
 
   .card-content {
@@ -167,14 +176,28 @@ body {
     text-align: start;
 
     align-items: flex-start;
+
+    padding: 5.5rem;
   }
 
   .card-content header h1 {
-    font-size: 2.6rem;
+    font-size: 2.7rem;
+
+    margin-bottom: 2rem;
+  }
+
+  .card-content header p {
+    font-size: 1.1rem;
+
+    margin: 0 2.2rem 3rem 0;
   }
 
   .card-content footer .stats {
     display: flex;
     gap: 5rem;
+  }
+
+  .card-content footer .stats h3 {
+    font-size: 1.8rem;
   }
 }
