@@ -17,7 +17,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ## 🔍 Demo
 
-- **[Stats preview card component](https://ordersummarycardchallenge.vercel.app/)**
+- **[Stats preview card component](https://statspreviewcardcomponentchallenge.vercel.app/)**
 
 ## Author
 
